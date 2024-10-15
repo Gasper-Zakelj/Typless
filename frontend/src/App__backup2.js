@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import 'flowbite/dist/flowbite.min.css'; // Make sure Flowbite is imported
-import TyplessLogo from './images/logovektorski.svg'; // Update this path as necessary
 
 function App() {
   const [file, setFile] = useState(null);
@@ -61,18 +60,9 @@ function App() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-lg">
-        <div className="flex items-center mb-8">
-          <img
-            src={TyplessLogo} // Use the logo here
-            alt="Typless Logo"
-            className="h-66 w-66 mr-4 flex-shrink-0"
-            style={{ objectFit: 'contain', width: '94px', height: '94px' }} // Ensure fixed size
-          />
-          <h1 style={{ fontFamily: 'Gotham, sans-serif', fontSize: '80px', fontWeight: 700, color: '#23A698' }}>
-            &nbsp; Typless
-          </h1>
-        </div>
-
+      <h1 className="text-6xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600 mb-8 shadow-lg animate-bounce">
+      Typless
+      </h1>
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700 mb-1">Upload Document:</label>
           <input
