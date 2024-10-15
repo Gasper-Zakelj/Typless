@@ -2,11 +2,11 @@
 
 setup:
 
-1)start node
+1) start node
 cd frontend
 gasper@Gaspers-Air frontend % npm run start
 
-2)run app.py
+2) run app.py
 python3 backend/app.py
 
 3) open browser window
